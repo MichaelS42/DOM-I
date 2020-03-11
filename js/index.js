@@ -40,3 +40,10 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//Task 1: Create selectors to point your data into elements
+
+const selectors = document.querySelectorAll(".container")
+return selectors
+
