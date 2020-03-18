@@ -83,19 +83,28 @@ middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 
 
-let bottomContent = document.querySelectorAll(". h4");
+let bottomContent = document.querySelectorAll(".bottom-content h4");
 console.log(feat)
-feat[0].textContent = siteContent["main-content"]["features-h4"];
+bottomContent[0].textContent = siteContent["main-content"]["services-h4"];
+bottomContent[1].textContent = siteContent["main-content"]["product-h4"]
+bottomContent[2].textContent = siteContent["main-content"]["vision-h4"]
 
-feat[1].textContent = siteContent["main-content"]["about-h4"]
+let bottomContentP = document.querySelectorAll(".bottom-content p")
+bottomContentP[0].textContent = siteContent["main-content"]["services-content"]
+bottomContentP[1].textContent = siteContent["main-content"]["product-content"]
+bottomContentP[2].textContent = siteContent["main-content"]["vision-content"]
+
+let contactH4 = document.querySelector(".contact h4")
+contactH4.textContent = siteContent["contact"]["contact-h4"]
+
+let contactP = document.querySelectorAll(".contact p")
+contactP[0].textContent = siteContent["contact"]["address"]
+contactP[1].textContent = siteContent["contact"]["phone"]
+contactP[2].textContent = siteContent["contact"]["email"]
 
 
-
-
-
-
-
-
+let footer = document.querySelector("footer")
+footer.textContent = siteContent["footer"]["copyright"]
 
 
 
